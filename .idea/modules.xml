@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CitizenService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CitizenService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VaccinationCenter.main.iml" filepath="$PROJECT_DIR$/.idea/modules/VaccinationCenter.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservices_spring_boot_V1.iml" filepath="$PROJECT_DIR$/.idea/microservices_spring_boot_V1.iml" />
     </modules>
   </component>
