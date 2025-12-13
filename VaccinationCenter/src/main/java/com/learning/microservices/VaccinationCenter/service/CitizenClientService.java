@@ -18,7 +18,7 @@ public class CitizenClientService {
     @CircuitBreaker(name="GetCitizensFallBack", fallbackMethod="fallback")
     public List<Citizen> getCitizens(Integer centerId) {
         return restTemplate.getForObject(
-                "http://CITIZENSERVICE/citizen/id/" + centerId,
+                "http://CITIZEN-SERVICE/citizen/id/" + centerId,
                 List.class
         );
     }

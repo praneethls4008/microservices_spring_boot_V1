@@ -1,0 +1,20 @@
+server:
+  port: 8111
+
+spring:
+  application:
+    name: API_GATEWAY
+
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: CITIZEN-SERVICE
+              uri: lb://CITIZEN-SERVICE
+              predicates:
+                - Path=/citizen/**
+            - id: VACCINATIONCENTER
+              uri: lb://VACCINATION-CENTER-SERVICE
+              predicates:
+                - Path=/vaccination-center/**

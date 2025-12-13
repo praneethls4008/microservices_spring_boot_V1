@@ -4,7 +4,7 @@ server:
 spring:
 
   application:
-    name: CITIZEN-SERVICE
+    name: citizen-service
 
   datasource:
     url: jdbc:mysql://localhost:3306/Microservices_SpringBoot_V1

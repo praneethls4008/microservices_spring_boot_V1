@@ -4,7 +4,7 @@ server:
 spring:
 
   application:
-    name: VACCINATION_CENTER-SERVICE
+    name: vaccination-center-service
 
   datasource:
     url: jdbc:mysql://localhost:3306/Microservices_SpringBoot_V1
@@ -28,3 +28,9 @@ resilience4j:
     instances:
       GetCitizensFallBack:
         base-config: default
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway,health,info
